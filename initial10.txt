@@ -1,4 +1,0 @@
-Nevsehir, Gulsehir, Soner Kemal, COOK
-Nevsehir, Gulsehir, Zahid Hasibe, COURIER
-Nevsehir, Gulsehir, Raman Zaim, CASHIER
-Nevsehir, Gulsehir, Esved Kadriye, MANAGER
