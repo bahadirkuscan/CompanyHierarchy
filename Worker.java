@@ -122,7 +122,7 @@ public class Worker extends Entry{
                 worker.promotion_points -= 3;
                 worker.branch.cashier_count--;
                 worker.branch.cook_count++;
-                project2.output_writer.write(worker.name + " is promoted from Cashier to Cook.\n");
+                Main.output_writer.write(worker.name + " is promoted from Cashier to Cook.\n");
 
                 if (worker.branch.cook_count == 2){     // cook count increased, check the cooks waiting for promotion or dismissal
                     if (worker.branch.manager_will_dismiss && worker.branch.cooks_promotion_queue.size > 0){    // promotion
@@ -151,7 +151,7 @@ public class Worker extends Entry{
                 worker.promotion_points -= 10;
                 worker.branch.cook_count--;
                 worker.branch.manager = worker;
-                project2.output_writer.write(worker.name + " is promoted from Cook to Manager.\n");
+                Main.output_writer.write(worker.name + " is promoted from Cook to Manager.\n");
                 break;
         }
     }
@@ -160,18 +160,18 @@ public class Worker extends Entry{
         switch (worker.profession){
             case "COURIER":
                 worker.branch.courier_count--;
-                project2.output_writer.write(worker.name + " is " + out_message + " from branch: " + worker.branch.name + ".\n");
+                Main.output_writer.write(worker.name + " is " + out_message + " from branch: " + worker.branch.name + ".\n");
                 break;
             case "CASHIER":
                 worker.branch.cashier_count--;
-                project2.output_writer.write(worker.name + " is " + out_message + " from branch: " + worker.branch.name + ".\n");
+                Main.output_writer.write(worker.name + " is " + out_message + " from branch: " + worker.branch.name + ".\n");
                 break;
             case "COOK":
                 worker.branch.cook_count--;
-                project2.output_writer.write(worker.name + " is " + out_message + " from branch: " + worker.branch.name + ".\n");
+                Main.output_writer.write(worker.name + " is " + out_message + " from branch: " + worker.branch.name + ".\n");
                 break;
             case "MANAGER":
-                project2.output_writer.write(worker.name + " is " + out_message + " from branch: " + worker.branch.name + ".\n");
+                Main.output_writer.write(worker.name + " is " + out_message + " from branch: " + worker.branch.name + ".\n");
                 worker.branch.manager_will_dismiss = false;
                 break;
         }
