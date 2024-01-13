@@ -25,3 +25,6 @@ Promotion and dismissal rules:
 7) Double promotions are possible.
 8) If an employee who is set to be dismissed tries to leave the company, no bonus is given.
 9) An employee won't be set to leave the company after taking a bonus. Leaving is only done instantly.
+
+
+Note: I wasn't able to upload all the test cases (including larger ones) due to github restrictions.
