@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class project2 {
+public class Main {
     public static PrintWriter output_writer;
     public static void main(String[] args) throws FileNotFoundException {
         if (args.length != 3) {
