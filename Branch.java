@@ -19,7 +19,7 @@ public class Branch extends Entry{
 
     public void addWorker(Worker worker){
         if (workers.find(worker.name) != null){
-            project2.output_writer.write("Existing employee cannot be added again.\n");
+            Main.output_writer.write("Existing employee cannot be added again.\n");
             return;
         }
         workers.add(worker);
